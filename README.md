@@ -1,10 +1,12 @@
 Проект выполнен на Angular9
 Для запуска проекта:
-1.Ввести в консоли: npm install
-2.Для эмуляции сервера используется json-server (база данных db.json): https://www.npmjs.com/package/json-server
-    2.1. Установить сервер: npm install -g json-server
-    2.2. Запустить сервер (по умолчанию порт 3000): json-server --watch db.json
+1. Ввести в консоли: npm install
+2. Для эмуляции сервера используется json-server (база данных db.json): https://www.npmjs.com/package/json-server
+3. Запустить сервер (по умолчанию порт 3000): json-server --watch db.json
 3. Ввести в консоли (по умолчанию порт 4200): ng serve
+
+
+
 
 
 # ContactsApp

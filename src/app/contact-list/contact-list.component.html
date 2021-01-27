@@ -1,0 +1,35 @@
+<h3>Contacts</h3>
+<button class="btn btn-primary" (click)='createContact()'>Add new contact</button>
+<div class="search-container input-group mb-3">
+  <input type="text" class="form-control" (keyup)='searchContact($event)'>
+  <div *ngIf="errorMessage" class='alert alert-danger'>
+    {{errorMessage}}
+  </div>
+</div>
+<table class="table table-hover table-striped">
+  <tr class='row'>
+    <th class='col-lg-3 col-sm-3 col-3'>First name</th>
+    <th class='col-lg-3 col-sm-3 col-3'>Last name</th>
+    <th class='col-lg-2 col-sm-2 col-3'>Phone</th>
+    <th class='col-lg-4 col-sm-4 col-3'></th>
+  </tr>
+  <tr class='row' *ngFor="let item of Contacts">
+    <td class='col-lg-3 col-sm-3 col-3'>{{item.firstName}}</td>
+    <td class='col-lg-3 col-sm-3 col-3'>{{item.lastName}}</td>
+    <td class='col-lg-2 col-sm-2 col-3'>{{item.number}}</td>
+    <td class='col-lg-4 col-sm-4 col-3' *ngIf="item.id != deleteId">
+      <button class="btn btn-sm btn-primary" (click)='showDetail(item.id)'>Details</button>
+      <button class="btn btn-sm btn-warning" (click)='editContact(item.id)'>Edit</button>
+      <button class="btn btn-sm btn-danger" (click)='deleteContactQuestion(item.id)'>Delete</button>
+    </td>
+    <td class='col-lg-4 col-sm-4 col-3' *ngIf="item.id === deleteId && !isDeleting">
+      <button class="btn btn-sm btn-light" (click)='cancelDelete()'>Cancel</button>
+      <button class="btn btn-sm btn-danger" (click)='deleteContact(item.id)'>Delete</button> Delete this car?
+      <p *ngIf="deleteError">{{deleteError}}</p>
+    </td>
+    <td class='col-lg-4 col-sm-4 col-3' *ngIf="item.id === deleteId && isDeleting">
+      Deleting ...
+      <img src="assets/img/deleteLoader.gif">
+    </td>
+  </tr>
+</table>

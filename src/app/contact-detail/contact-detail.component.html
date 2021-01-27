@@ -1,0 +1,9 @@
+<div @visibility *ngIf="contact">
+  <app-dynamic-form [vm]='contact'
+                    [vmDefinition]='contactDefinitionInput'
+                    [operation]='operation'
+                    [errorMessage]='errorMessage'
+                    (update)='updateContact($event)'
+                    (create)='createContact($event)'>
+  </app-dynamic-form>
+</div>

@@ -1,0 +1,52 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "firstName": "Ivan",
+      "lastName": "Petrov",
+      "address": "Lenina, 1",
+      "number": "89025131313",
+      "email": "petrov@gmail.com"
+    },
+    {
+      "id": 2,
+      "firstName": "Sergey",
+      "lastName": "Ivanov",
+      "address": "Pushkina, 34",
+      "number": "89504978542",
+      "email": "ivanov@gmail.com"
+    },
+    {
+      "id": 3,
+      "firstName": "Vladimir",
+      "lastName": "Sidorov",
+      "address": "Gogolya, 17",
+      "number": "89146135284",
+      "email": "sidorov@mail.ru"
+    },
+    {
+      "id": 4,
+      "firstName": "Petr",
+      "lastName": "Frolov",
+      "address": "Lermontova, 234",
+      "number": "79513499645",
+      "email": "frolov@gmail.com"
+    },
+    {
+      "id": 5,
+      "firstName": "Aleksandr",
+      "lastName": "Andreev",
+      "address": "Baikalskaya, 72",
+      "number": 89641162876,
+      "email": "andreev@mail.ru"
+    }
+  ],
+  "users": [
+    {
+      "name": "test",
+      "email": "test@test.ru",
+      "password": "111111",
+      "id": 1
+    }
+  ]
+}
