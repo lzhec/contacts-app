@@ -1,12 +1,12 @@
 Проект выполнен на Angular9
 Для запуска проекта:
-1. Установить зависимости: npm install
-2. Для стилей используется bootstrap. Установить: npm install bootstrap
-3. Для эмуляции сервера используется json-server (база данных db.json): https://www.npmjs.com/package/json-server
-4. Запустить сервер (по умолчанию порт 3000): json-server --watch db.json
-5. Запустить проект (по умолчанию порт 4200): ng serve
+    1. Установить зависимости: npm install
+    2. Для стилей используется bootstrap. Установить: npm install bootstrap
+    3. Для эмуляции сервера используется json-server (база данных db.json): https://www.npmjs.com/package/json-server
+    4. Запустить сервер (по умолчанию порт 3000): json-server --watch db.json
+    5. Запустить проект (по умолчанию порт 4200): ng serve
 
-В БД уже добавлен тестовый юзер test@test.ru / 111111
+Добавлена БД db.json в корне каталога. В нее уже добавлен список контактов и юзер test@test.ru / 111111
 
 
 
