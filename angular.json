@@ -124,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "contacts-app"
+    }
+  },
+  "defaultProject": "contacts-app",
+  "cli": {
+    "analytics": "bb5e3975-22f6-4a2f-bb8f-d9f11f52fbb3"
+  }
 }
