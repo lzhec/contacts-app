@@ -1,0 +1,14 @@
+:host {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+}
+
+.container {
+  margin-right: 30px;
+
+  button {
+    margin-left: 10px;
+  }
+}

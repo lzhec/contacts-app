@@ -44,7 +44,7 @@ export class ContactListComponent implements OnInit {
     this.isDeleting = true;
     this.appDataService.deleteContact(id).subscribe(c => {
       this.cancelDelete();
-      this.Contacts = this.Contacts.filter(carItem => carItem.id !== id);
+      this.Contacts = this.Contacts.filter(item => item.id !== id);
     }, error => {
         this.deleteError = error;
         this.isDeleting = false;

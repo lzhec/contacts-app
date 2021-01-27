@@ -24,7 +24,7 @@
     </td>
     <td class='col-lg-4 col-sm-4 col-3' *ngIf="item.id === deleteId && !isDeleting">
       <button class="btn btn-sm btn-light" (click)='cancelDelete()'>Cancel</button>
-      <button class="btn btn-sm btn-danger" (click)='deleteContact(item.id)'>Delete</button> Delete this car?
+      <button class="btn btn-sm btn-danger" (click)='deleteContact(item.id)'>Delete</button> Delete this contact?
       <p *ngIf="deleteError">{{deleteError}}</p>
     </td>
     <td class='col-lg-4 col-sm-4 col-3' *ngIf="item.id === deleteId && isDeleting">
